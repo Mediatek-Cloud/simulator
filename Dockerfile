@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 LABEL maintainer="Bo-Yi Wu <appleboy.tw@gmail.com>"
 
 RUN apt-get -y update
-RUN apt-get -y install python-pip python-dev build-essential software-properties-common wget locales
+RUN apt-get -y install python-pip python-dev build-essential software-properties-common wget locales libc6-i386
 RUN pip install --upgrade pip
 RUN pip install numpy
 RUN add-apt-repository -y ppa:jonathonf/python-3.6
