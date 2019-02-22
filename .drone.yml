@@ -7,6 +7,7 @@ steps:
   settings:
     repo: mediatekcloud/simulator
     auto_tag: true
+    cache_from: mediatekcloud/simulator
     dockerfile: Dockerfile
     username:
       from_secret: docker_username
