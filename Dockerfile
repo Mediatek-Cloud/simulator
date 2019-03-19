@@ -15,6 +15,8 @@ RUN echo "LANG=en_US.UTF-8" > /etc/locale.conf
 RUN locale-gen en_US.UTF-8
 # Add zip command
 RUN apt-get -y install zip
+# Add expect for petrus
+RUN apt-get -y install expect
 
 # Define working directory.
 WORKDIR /root
