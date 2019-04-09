@@ -17,6 +17,8 @@ RUN locale-gen en_US.UTF-8
 RUN apt-get -y install zip
 # Add expect for petrus
 RUN apt-get -y install expect
+# Add vim for debug
+RUN apt-get -y install vim
 
 # Define working directory.
 WORKDIR /root
