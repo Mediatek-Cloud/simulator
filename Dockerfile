@@ -19,6 +19,8 @@ RUN apt-get -y install zip
 RUN apt-get -y install expect
 # Add vim for debug
 RUN apt-get -y install vim
+# remove cache package
+RUN rm -rf /var/lib/apt/lists/*
 
 # Define working directory.
 WORKDIR /root
